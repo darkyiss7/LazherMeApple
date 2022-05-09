@@ -2,7 +2,7 @@
 //  HomeView.swift
 //  LazherMeApp
 //
-//  Created by theo on 24/03/2022.
+//  Created by Theo Dubois on 24/03/2022.
 //
 
 import SwiftUI
