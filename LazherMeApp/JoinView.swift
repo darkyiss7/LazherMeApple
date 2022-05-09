@@ -10,12 +10,15 @@ import SwiftUI
 struct JoinView: View {
     @State var code: String = ""
     var body: some View {
-        CodeTextField(code: $code)
-            .padding(.bottom, 0.0)
-        NavigationLink(destination: BLEScan()){
-                RejoindreBouton()
+        VStack{
+            CodeTextField(code: $code)
                 .padding(.bottom, 0.0)
+            NavigationLink(destination: BLEScan()){
+                    RejoindreBouton()
+                    .padding(.bottom, 0.0)
+            }
         }
+        
     }
 }
 
@@ -35,4 +38,5 @@ struct RejoindreBouton: View {
             .cornerRadius(35.0)
     }
 }
+
 

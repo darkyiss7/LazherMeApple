@@ -8,9 +8,20 @@
 import SwiftUI
 
 struct CreateView: View {
+    @State private var favoriteMode = "Team-Deathmatch"
+        var modes = ["Team-Deathmatch", "Free-For-All"]
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+        VStack{
+            Text("Mode de jeu")
+            Picker("Mode de jeu", selection: $favoriteMode) {
+                            ForEach(modes, id: \.self) {
+                                Text($0)
+                            }
+                        }
+                        .pickerStyle(.segmented)
+            Text("Value: \(favoriteMode)")
+        }
+        }
 }
 
 struct CreateView_Previews: PreviewProvider {
