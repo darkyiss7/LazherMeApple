@@ -25,7 +25,6 @@ struct HomeView: View {
                   }
             }.accentColor(purpleDark)
         }
-        
         .navigationBarTitle(Text("Accueil"))
         .toolbar{
             ToolbarItemGroup(placement: .navigationBarTrailing){
@@ -36,10 +35,7 @@ struct HomeView: View {
             }
         }
         }
-        
     }
-
-        
 }
 
 struct HomeView_Previews: PreviewProvider {
