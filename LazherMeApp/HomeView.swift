@@ -27,13 +27,36 @@ struct HomeView: View {
         }
         .navigationBarTitle(Text("Accueil"))
         .toolbar{
-            ToolbarItemGroup(placement: .navigationBarTrailing){
-            Button{
-                viewModel.signOut()
-            } label : {
-                Image(systemName: "ellipsis.circle")
-            }
-        }
+            ToolbarItem(placement: .primaryAction) {
+                                Menu {
+                                    Section {
+                                        Button(action: {}) {
+                                            Label("Create a file", systemImage: "doc")
+                                        }
+
+                                        Button(action: {}) {
+                                            Label("Create a folder", systemImage: "folder")
+                                        }
+                                    }
+
+                                    Section(header: Text("Secondary actions")) {
+                                        Button(action: {}) {
+                                            Label("Remove old files", systemImage: "trash")
+                                                .foregroundColor(.red)
+                                        }
+                                    }
+                                }
+                                label: {
+                                    Label("Add", systemImage: "plus")
+                                }
+                            }
+         //   ToolbarItemGroup(placement: .navigationBarTrailing){
+         //   Button{
+          //      viewModel.signOut()
+          //  } label : {
+           //     Image(systemName: "ellipsis.circle")
+            //}
+        //}
         }
     }
 }

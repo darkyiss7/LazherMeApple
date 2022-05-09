@@ -21,18 +21,23 @@ struct CreateView: View {
                 .padding(.bottom,50.0)
             HStack{
                 Text("Mode de jeu")
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.leading, 20.0)
                 Picker("Mode de jeu", selection: $favoriteMode) {
                     ForEach(modes, id: \.self) {
                         Text($0)
                     }
                 }
-                .pickerStyle(.segmented)
+                .pickerStyle(.menu)
+                .padding(.trailing,30.0)
                 .padding(.bottom , 20.0)
             }
             
             //Text("Value: \(favoriteMode)")
             HStack{
                 Text("Nombre de joueurs")
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.leading, 20.0)
                 Picker("Nombre de joueurs", selection: $favoriteNombre) {
                     ForEach(nombres, id: \.self) {
                         Text($0)
@@ -40,24 +45,30 @@ struct CreateView: View {
                     }
                 }
                 .pickerStyle(.menu)
+                .padding(.trailing,70.0)
                 .padding(.bottom , 20.0)
             }
             
             // Text("Value: \(favoriteNombre)")
             HStack{
                 Text("Temps")
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.leading, 20.0)
                 Picker("Temps", selection: $favoriteTemps) {
                     ForEach(temps, id: \.self) {
                         Text($0)
                     }
                 }
                 .pickerStyle(.menu)
+                .padding(.trailing,70.0)
                 // Text("Value: \(favoriteTemps)")
-                Button {
-                    print("Image tapped!")
-                } label: {
-                    CreerBouton()
-                }
+                
+            }
+            .padding(.bottom,40.0)
+            Button {
+                print("Image tapped!")
+            } label: {
+                CreerBouton()
             }
             
         }
