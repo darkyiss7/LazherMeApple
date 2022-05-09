@@ -16,37 +16,50 @@ struct CreateView: View {
     var temps = ["10", "20", "30"]
     var body: some View {
         VStack{
-            Text("Mode de jeu")
-            Picker("Mode de jeu", selection: $favoriteMode) {
-                ForEach(modes, id: \.self) {
-                    Text($0)
+            Text("Creer une partie")
+                .font(.largeTitle)
+                .padding(.bottom,50.0)
+            HStack{
+                Text("Mode de jeu")
+                Picker("Mode de jeu", selection: $favoriteMode) {
+                    ForEach(modes, id: \.self) {
+                        Text($0)
+                    }
                 }
+                .pickerStyle(.segmented)
+                .padding(.bottom , 20.0)
             }
-            .pickerStyle(.segmented)
+            
             //Text("Value: \(favoriteMode)")
-            
-            Text("Nombre de joueurs")
-            Picker("Nombre de joueurs", selection: $favoriteNombre) {
-                ForEach(nombres, id: \.self) {
-                    Text($0)
+            HStack{
+                Text("Nombre de joueurs")
+                Picker("Nombre de joueurs", selection: $favoriteNombre) {
+                    ForEach(nombres, id: \.self) {
+                        Text($0)
+                            .font(.system(size: 15.0))
+                    }
                 }
+                .pickerStyle(.menu)
+                .padding(.bottom , 20.0)
             }
-            .pickerStyle(.menu)
+            
             // Text("Value: \(favoriteNombre)")
-            
-            Text("Temps")
-            Picker("Temps", selection: $favoriteTemps) {
-                ForEach(temps, id: \.self) {
-                    Text($0)
+            HStack{
+                Text("Temps")
+                Picker("Temps", selection: $favoriteTemps) {
+                    ForEach(temps, id: \.self) {
+                        Text($0)
+                    }
+                }
+                .pickerStyle(.menu)
+                // Text("Value: \(favoriteTemps)")
+                Button {
+                    print("Image tapped!")
+                } label: {
+                    CreerBouton()
                 }
             }
-            .pickerStyle(.menu)
-            // Text("Value: \(favoriteTemps)")
-            Button {
-                print("Image tapped!")
-            } label: {
-                CreerBouton()
-            }
+            
         }
     }
 }
@@ -58,12 +71,12 @@ struct CreateView_Previews: PreviewProvider {
 }
 struct CreerBouton: View {
     var body: some View {
-        Text("CREER UNE PARTIE")
+        
+        Text("CREER")
             .font(.headline)
             .padding()
             .foregroundColor(.white)
             .frame(width: 240, height: 60)
-            .background(.blue)
-            .cornerRadius(35.0)
+            .background(purpleDark)
     }
 }
