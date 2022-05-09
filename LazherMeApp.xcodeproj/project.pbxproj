@@ -1,0 +1,682 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B7BB4ABBAA1104BE11D24520 /* Pods_LazherMeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 019548E7357E7E201983E489 /* Pods_LazherMeApp.framework */; };
+		E4238A442805138B0061FE2C /* BLEManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4238A432805138B0061FE2C /* BLEManager.swift */; };
+		E4238A46280514F30061FE2C /* BLEScan.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4238A45280514F30061FE2C /* BLEScan.swift */; };
+		E4397BDE27FD20A8004A6B8C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4397BDD27FD20A8004A6B8C /* GoogleService-Info.plist */; };
+		E475A02827EBD901007770CB /* LazherMeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E475A02727EBD901007770CB /* LazherMeAppApp.swift */; };
+		E475A02A27EBD901007770CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E475A02927EBD901007770CB /* ContentView.swift */; };
+		E475A02C27EBD906007770CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E475A02B27EBD906007770CB /* Assets.xcassets */; };
+		E475A02F27EBD906007770CB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E475A02E27EBD906007770CB /* Preview Assets.xcassets */; };
+		E475A03927EBD906007770CB /* LazherMeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E475A03827EBD906007770CB /* LazherMeAppTests.swift */; };
+		E475A04327EBD906007770CB /* LazherMeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E475A04227EBD906007770CB /* LazherMeAppUITests.swift */; };
+		E475A04527EBD906007770CB /* LazherMeAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E475A04427EBD906007770CB /* LazherMeAppUITestsLaunchTests.swift */; };
+		E475A05227EBECE7007770CB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E475A05127EBECE7007770CB /* HomeView.swift */; };
+		E475A05427EBEFB3007770CB /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E475A05327EBEFB3007770CB /* Storyboard.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E475A03527EBD906007770CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E475A01C27EBD901007770CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E475A02327EBD901007770CB;
+			remoteInfo = LazherMeApp;
+		};
+		E475A03F27EBD906007770CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E475A01C27EBD901007770CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E475A02327EBD901007770CB;
+			remoteInfo = LazherMeApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		019548E7357E7E201983E489 /* Pods_LazherMeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LazherMeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		986F9E7D2CCC2B090A4775C0 /* Pods-LazherMeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LazherMeApp.debug.xcconfig"; path = "Target Support Files/Pods-LazherMeApp/Pods-LazherMeApp.debug.xcconfig"; sourceTree = "<group>"; };
+		E4238A432805138B0061FE2C /* BLEManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEManager.swift; sourceTree = "<group>"; };
+		E4238A45280514F30061FE2C /* BLEScan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEScan.swift; sourceTree = "<group>"; };
+		E4238A4728051ABA0061FE2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E4397BDD27FD20A8004A6B8C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E475A02427EBD901007770CB /* LazherMeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LazherMeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E475A02727EBD901007770CB /* LazherMeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazherMeAppApp.swift; sourceTree = "<group>"; };
+		E475A02927EBD901007770CB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E475A02B27EBD906007770CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E475A02E27EBD906007770CB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E475A03427EBD906007770CB /* LazherMeAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LazherMeAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E475A03827EBD906007770CB /* LazherMeAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazherMeAppTests.swift; sourceTree = "<group>"; };
+		E475A03E27EBD906007770CB /* LazherMeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LazherMeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E475A04227EBD906007770CB /* LazherMeAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazherMeAppUITests.swift; sourceTree = "<group>"; };
+		E475A04427EBD906007770CB /* LazherMeAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazherMeAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E475A05127EBECE7007770CB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E475A05327EBEFB3007770CB /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		F8B5CB861200CD649798413D /* Pods-LazherMeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LazherMeApp.release.xcconfig"; path = "Target Support Files/Pods-LazherMeApp/Pods-LazherMeApp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E475A02127EBD901007770CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7BB4ABBAA1104BE11D24520 /* Pods_LazherMeApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E475A03127EBD906007770CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E475A03B27EBD906007770CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D0AACD836B16A9CE51160F9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				986F9E7D2CCC2B090A4775C0 /* Pods-LazherMeApp.debug.xcconfig */,
+				F8B5CB861200CD649798413D /* Pods-LazherMeApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DFD45DFF0ECC609C35955172 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				019548E7357E7E201983E489 /* Pods_LazherMeApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E475A01B27EBD901007770CB = {
+			isa = PBXGroup;
+			children = (
+				E475A02627EBD901007770CB /* LazherMeApp */,
+				E475A03727EBD906007770CB /* LazherMeAppTests */,
+				E475A04127EBD906007770CB /* LazherMeAppUITests */,
+				E475A02527EBD901007770CB /* Products */,
+				1D0AACD836B16A9CE51160F9 /* Pods */,
+				DFD45DFF0ECC609C35955172 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E475A02527EBD901007770CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E475A02427EBD901007770CB /* LazherMeApp.app */,
+				E475A03427EBD906007770CB /* LazherMeAppTests.xctest */,
+				E475A03E27EBD906007770CB /* LazherMeAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E475A02627EBD901007770CB /* LazherMeApp */ = {
+			isa = PBXGroup;
+			children = (
+				E4238A4728051ABA0061FE2C /* Info.plist */,
+				E4397BDD27FD20A8004A6B8C /* GoogleService-Info.plist */,
+				E475A02727EBD901007770CB /* LazherMeAppApp.swift */,
+				E475A02927EBD901007770CB /* ContentView.swift */,
+				E475A05127EBECE7007770CB /* HomeView.swift */,
+				E475A02B27EBD906007770CB /* Assets.xcassets */,
+				E475A02D27EBD906007770CB /* Preview Content */,
+				E475A05327EBEFB3007770CB /* Storyboard.storyboard */,
+				E4238A432805138B0061FE2C /* BLEManager.swift */,
+				E4238A45280514F30061FE2C /* BLEScan.swift */,
+			);
+			path = LazherMeApp;
+			sourceTree = "<group>";
+		};
+		E475A02D27EBD906007770CB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E475A02E27EBD906007770CB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E475A03727EBD906007770CB /* LazherMeAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				E475A03827EBD906007770CB /* LazherMeAppTests.swift */,
+			);
+			path = LazherMeAppTests;
+			sourceTree = "<group>";
+		};
+		E475A04127EBD906007770CB /* LazherMeAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E475A04227EBD906007770CB /* LazherMeAppUITests.swift */,
+				E475A04427EBD906007770CB /* LazherMeAppUITestsLaunchTests.swift */,
+			);
+			path = LazherMeAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E475A02327EBD901007770CB /* LazherMeApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E475A04827EBD906007770CB /* Build configuration list for PBXNativeTarget "LazherMeApp" */;
+			buildPhases = (
+				0D06657DA6CF0D3136EC6B9C /* [CP] Check Pods Manifest.lock */,
+				E475A02027EBD901007770CB /* Sources */,
+				E475A02127EBD901007770CB /* Frameworks */,
+				E475A02227EBD901007770CB /* Resources */,
+				7A30F0870CEA2EC8C84C2391 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LazherMeApp;
+			productName = LazherMeApp;
+			productReference = E475A02427EBD901007770CB /* LazherMeApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E475A03327EBD906007770CB /* LazherMeAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E475A04B27EBD906007770CB /* Build configuration list for PBXNativeTarget "LazherMeAppTests" */;
+			buildPhases = (
+				E475A03027EBD906007770CB /* Sources */,
+				E475A03127EBD906007770CB /* Frameworks */,
+				E475A03227EBD906007770CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E475A03627EBD906007770CB /* PBXTargetDependency */,
+			);
+			name = LazherMeAppTests;
+			productName = LazherMeAppTests;
+			productReference = E475A03427EBD906007770CB /* LazherMeAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E475A03D27EBD906007770CB /* LazherMeAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E475A04E27EBD906007770CB /* Build configuration list for PBXNativeTarget "LazherMeAppUITests" */;
+			buildPhases = (
+				E475A03A27EBD906007770CB /* Sources */,
+				E475A03B27EBD906007770CB /* Frameworks */,
+				E475A03C27EBD906007770CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E475A04027EBD906007770CB /* PBXTargetDependency */,
+			);
+			name = LazherMeAppUITests;
+			productName = LazherMeAppUITests;
+			productReference = E475A03E27EBD906007770CB /* LazherMeAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E475A01C27EBD901007770CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					E475A02327EBD901007770CB = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					E475A03327EBD906007770CB = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = E475A02327EBD901007770CB;
+					};
+					E475A03D27EBD906007770CB = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = E475A02327EBD901007770CB;
+					};
+				};
+			};
+			buildConfigurationList = E475A01F27EBD901007770CB /* Build configuration list for PBXProject "LazherMeApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E475A01B27EBD901007770CB;
+			productRefGroup = E475A02527EBD901007770CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E475A02327EBD901007770CB /* LazherMeApp */,
+				E475A03327EBD906007770CB /* LazherMeAppTests */,
+				E475A03D27EBD906007770CB /* LazherMeAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E475A02227EBD901007770CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E475A02F27EBD906007770CB /* Preview Assets.xcassets in Resources */,
+				E4397BDE27FD20A8004A6B8C /* GoogleService-Info.plist in Resources */,
+				E475A02C27EBD906007770CB /* Assets.xcassets in Resources */,
+				E475A05427EBEFB3007770CB /* Storyboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E475A03227EBD906007770CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E475A03C27EBD906007770CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D06657DA6CF0D3136EC6B9C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LazherMeApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A30F0870CEA2EC8C84C2391 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LazherMeApp/Pods-LazherMeApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LazherMeApp/Pods-LazherMeApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LazherMeApp/Pods-LazherMeApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E475A02027EBD901007770CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E475A05227EBECE7007770CB /* HomeView.swift in Sources */,
+				E4238A442805138B0061FE2C /* BLEManager.swift in Sources */,
+				E475A02A27EBD901007770CB /* ContentView.swift in Sources */,
+				E4238A46280514F30061FE2C /* BLEScan.swift in Sources */,
+				E475A02827EBD901007770CB /* LazherMeAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E475A03027EBD906007770CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E475A03927EBD906007770CB /* LazherMeAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E475A03A27EBD906007770CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E475A04527EBD906007770CB /* LazherMeAppUITestsLaunchTests.swift in Sources */,
+				E475A04327EBD906007770CB /* LazherMeAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E475A03627EBD906007770CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E475A02327EBD901007770CB /* LazherMeApp */;
+			targetProxy = E475A03527EBD906007770CB /* PBXContainerItemProxy */;
+		};
+		E475A04027EBD906007770CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E475A02327EBD901007770CB /* LazherMeApp */;
+			targetProxy = E475A03F27EBD906007770CB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E475A04627EBD906007770CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E475A04727EBD906007770CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E475A04927EBD906007770CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 986F9E7D2CCC2B090A4775C0 /* Pods-LazherMeApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LazherMeApp/Preview Content\"";
+				DEVELOPMENT_TEAM = RY2ULATYG3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LazherMeApp/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Ouai le S l'app va utiliser ton bluettoth";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.isen.LazherMeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E475A04A27EBD906007770CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8B5CB861200CD649798413D /* Pods-LazherMeApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LazherMeApp/Preview Content\"";
+				DEVELOPMENT_TEAM = RY2ULATYG3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LazherMeApp/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Ouai le S l'app va utiliser ton bluettoth";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.isen.LazherMeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E475A04C27EBD906007770CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.isen.LazherMeAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LazherMeApp.app/LazherMeApp";
+			};
+			name = Debug;
+		};
+		E475A04D27EBD906007770CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.isen.LazherMeAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LazherMeApp.app/LazherMeApp";
+			};
+			name = Release;
+		};
+		E475A04F27EBD906007770CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.isen.LazherMeAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LazherMeApp;
+			};
+			name = Debug;
+		};
+		E475A05027EBD906007770CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.isen.LazherMeAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LazherMeApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E475A01F27EBD901007770CB /* Build configuration list for PBXProject "LazherMeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E475A04627EBD906007770CB /* Debug */,
+				E475A04727EBD906007770CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E475A04827EBD906007770CB /* Build configuration list for PBXNativeTarget "LazherMeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E475A04927EBD906007770CB /* Debug */,
+				E475A04A27EBD906007770CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E475A04B27EBD906007770CB /* Build configuration list for PBXNativeTarget "LazherMeAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E475A04C27EBD906007770CB /* Debug */,
+				E475A04D27EBD906007770CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E475A04E27EBD906007770CB /* Build configuration list for PBXNativeTarget "LazherMeAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E475A04F27EBD906007770CB /* Debug */,
+				E475A05027EBD906007770CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E475A01C27EBD901007770CB /* Project object */;
+}
