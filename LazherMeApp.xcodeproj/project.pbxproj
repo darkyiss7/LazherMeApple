@@ -11,6 +11,8 @@
 		E4238A442805138B0061FE2C /* BLEManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4238A432805138B0061FE2C /* BLEManager.swift */; };
 		E4238A46280514F30061FE2C /* BLEScan.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4238A45280514F30061FE2C /* BLEScan.swift */; };
 		E4397BDE27FD20A8004A6B8C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4397BDD27FD20A8004A6B8C /* GoogleService-Info.plist */; };
+		E4428FD9282997C9001526E9 /* JoinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4428FD8282997C9001526E9 /* JoinView.swift */; };
+		E4428FDB28299872001526E9 /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4428FDA28299872001526E9 /* CreateView.swift */; };
 		E475A02827EBD901007770CB /* LazherMeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E475A02727EBD901007770CB /* LazherMeAppApp.swift */; };
 		E475A02A27EBD901007770CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E475A02927EBD901007770CB /* ContentView.swift */; };
 		E475A02C27EBD906007770CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E475A02B27EBD906007770CB /* Assets.xcassets */; };
@@ -46,6 +48,8 @@
 		E4238A45280514F30061FE2C /* BLEScan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEScan.swift; sourceTree = "<group>"; };
 		E4238A4728051ABA0061FE2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		E4397BDD27FD20A8004A6B8C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E4428FD8282997C9001526E9 /* JoinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinView.swift; sourceTree = "<group>"; };
+		E4428FDA28299872001526E9 /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
 		E475A02427EBD901007770CB /* LazherMeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LazherMeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E475A02727EBD901007770CB /* LazherMeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazherMeAppApp.swift; sourceTree = "<group>"; };
 		E475A02927EBD901007770CB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -134,6 +138,8 @@
 				E475A02727EBD901007770CB /* LazherMeAppApp.swift */,
 				E475A02927EBD901007770CB /* ContentView.swift */,
 				E475A05127EBECE7007770CB /* HomeView.swift */,
+				E4428FD8282997C9001526E9 /* JoinView.swift */,
+				E4428FDA28299872001526E9 /* CreateView.swift */,
 				E475A02B27EBD906007770CB /* Assets.xcassets */,
 				E475A02D27EBD906007770CB /* Preview Content */,
 				E475A05327EBEFB3007770CB /* Storyboard.storyboard */,
@@ -348,6 +354,8 @@
 				E4238A442805138B0061FE2C /* BLEManager.swift in Sources */,
 				E475A02A27EBD901007770CB /* ContentView.swift in Sources */,
 				E4238A46280514F30061FE2C /* BLEScan.swift in Sources */,
+				E4428FDB28299872001526E9 /* CreateView.swift in Sources */,
+				E4428FD9282997C9001526E9 /* JoinView.swift in Sources */,
 				E475A02827EBD901007770CB /* LazherMeAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

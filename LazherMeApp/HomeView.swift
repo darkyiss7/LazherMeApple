@@ -8,27 +8,37 @@
 import SwiftUI
 let purpleDark = Color(red: 123.0/255.0, green: 57.0/255.0, blue: 255.0/255.0)
 struct HomeView: View {
-    @State var code: String = ""
+    
     @EnvironmentObject var viewModel : AppViewModel
     var body: some View {
         VStack{
-            CreerBouton()
-                .padding(.bottom, 50.0)
-            CodeTextField(code: $code)
-                .padding(.bottom, 0.0)
-            NavigationLink(destination: BLEScan()){
-                    RejoindreBouton()
-                    .padding(.bottom, 0.0)
-            }
-            Button(action: {
+            TabView {
+               CreateView()
+                 .tabItem {
+                    Image(systemName: "plus.circle.fill")
+                    Text("Creer")
+                  }
+               JoinView()
+                 .tabItem {
+                     Image(systemName: "arrowtriangle.right.circle.fill")
+                    Text("Rejoindre")
+                  }
+            }.accentColor(purpleDark)
+        }
+        
+        .navigationBarTitle(Text("Accueil"))
+        .toolbar{
+            ToolbarItemGroup(placement: .navigationBarTrailing){
+            Button{
                 viewModel.signOut()
-            }){
-                DecoBouton()
-                    .padding(.top, 100.0)
+            } label : {
+                Image(systemName: "ellipsis.circle")
             }
         }
-        .navigationBarTitle(Text("Accueil"))
+        }
+        
     }
+
         
 }
 
@@ -37,28 +47,8 @@ struct HomeView_Previews: PreviewProvider {
         HomeView()
     }
 }
-struct CreerBouton: View {
-    var body: some View {
-        Text("CREER UNE PARTIE")
-            .font(.headline)
-            .padding()
-            .foregroundColor(.white)
-            .frame(width: 240, height: 60)
-            .background(.blue)
-            .cornerRadius(35.0)
-    }
-}
-struct RejoindreBouton: View {
-    var body: some View {
-        Text("REJOINDRE UNE PARTIE")
-            .font(.headline)
-            .padding()
-            .foregroundColor(.white)
-            .frame(width: 240, height: 60)
-            .background(.blue)
-            .cornerRadius(35.0)
-    }
-}
+
+
 struct CodeTextField: View{
     @Binding var code : String
     var body: some View {
