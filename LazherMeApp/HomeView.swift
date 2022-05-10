@@ -6,68 +6,77 @@
 //
 
 import SwiftUI
+
+
 let purpleDark = Color(red: 123.0/255.0, green: 57.0/255.0, blue: 255.0/255.0)
+
 struct HomeView: View {
     
+    @State var toolbarLinkSelected = false
+    @State var toolbarLink2Selected = false
     @EnvironmentObject var viewModel : AppViewModel
     var body: some View {
         VStack{
             TabView {
-               CreateView()
-                 .tabItem {
-                    Image(systemName: "plus.circle.fill")
-                    Text("Creer")
-                  }
-               JoinView()
-                 .tabItem {
-                     Image(systemName: "arrowtriangle.right.circle.fill")
-                    Text("Rejoindre")
-                  }
+                CreateView()
+                    .tabItem {
+                        Image(systemName: "plus.circle.fill")
+                        Text("Creer")
+                    }
+                JoinView()
+                    .tabItem {
+                        Image(systemName: "arrowtriangle.right.circle.fill")
+                        Text("Rejoindre")
+                    }
             }.accentColor(purpleDark)
         }
-        .navigationBarTitle(Text("Accueil"))
+
+        .navigationBarTitle("Try it!", displayMode: .inline)
+
         .toolbar{
+            ToolbarItem(placement: .principal) {
+                            Text("Accueil")
+                    .foregroundColor(.white)
+                        }
             ToolbarItem(placement: .primaryAction) {
-                                Menu {
-                                    Section {
-                                        Button(action: {}) {
-                                            Label("Create a file", systemImage: "doc")
-                                        }
-
-                                        Button(action: {}) {
-                                            Label("Create a folder", systemImage: "folder")
-                                        }
-                                    }
-
-                                    Section(header: Text("Secondary actions")) {
-                                        Button(action: {}) {
-                                            Label("Remove old files", systemImage: "trash")
-                                                .foregroundColor(.red)
-                                        }
-                                    }
-                                }
-                                label: {
-                                    Label("Add", systemImage: "plus")
-                                }
-                            }
-         //   ToolbarItemGroup(placement: .navigationBarTrailing){
-         //   Button{
-          //      viewModel.signOut()
-          //  } label : {
-           //     Image(systemName: "ellipsis.circle")
-            //}
-        //}
+                Menu {
+                        Button(action: {toolbarLinkSelected = true }) {
+                            Label("Profile", systemImage: "person")
+                        }
+                        Button(action: {toolbarLink2Selected = true}) {
+                            Label("Bluetooth", systemImage: "folder")
+                        }
+                    Button(action: {viewModel.signOut()}) {
+                        Label("Deconnexion", systemImage: "rectangle.portrait.and.arrow.right")
+                            .foregroundColor(.red)
+                    }
+                }
+            label: {
+                Label("More", systemImage: "ellipsis.circle")
+                    .font(.system(size: 20.0))
+                    .foregroundColor(.white)
+            }
+            }
         }
+        
+        .background(
+                        NavigationLink(
+                            destination: ProfileView(),
+                            isActive: $toolbarLinkSelected
+                        ) {
+                            EmptyView()
+                        }.hidden()
+                        )
+        .background(
+                        NavigationLink(
+                            destination: BLEScan(),
+                            isActive: $toolbarLink2Selected
+                        ) {
+                            EmptyView()
+                        }.hidden()
+                        )
     }
 }
-
-struct HomeView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeView()
-    }
-}
-
-
 struct CodeTextField: View{
     @Binding var code : String
     var body: some View {

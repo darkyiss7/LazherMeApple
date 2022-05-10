@@ -14,7 +14,7 @@ struct LazherMeAppApp: App {
     var body: some Scene {
         WindowGroup {
             let viewModel = AppViewModel()
-            ContentView()
+            SplashScreenView()
                 .environmentObject(viewModel)
         }
     }

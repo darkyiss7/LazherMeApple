@@ -13,6 +13,9 @@
 		E4397BDE27FD20A8004A6B8C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4397BDD27FD20A8004A6B8C /* GoogleService-Info.plist */; };
 		E4428FD9282997C9001526E9 /* JoinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4428FD8282997C9001526E9 /* JoinView.swift */; };
 		E4428FDB28299872001526E9 /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4428FDA28299872001526E9 /* CreateView.swift */; };
+		E4428FDD2829C291001526E9 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4428FDC2829C291001526E9 /* SplashScreenView.swift */; };
+		E4428FDF2829C6D8001526E9 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4428FDE2829C6D8001526E9 /* ProfileView.swift */; };
+		E4428FE12829F4D4001526E9 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4428FE02829F4D4001526E9 /* GameView.swift */; };
 		E475A02827EBD901007770CB /* LazherMeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E475A02727EBD901007770CB /* LazherMeAppApp.swift */; };
 		E475A02A27EBD901007770CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E475A02927EBD901007770CB /* ContentView.swift */; };
 		E475A02C27EBD906007770CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E475A02B27EBD906007770CB /* Assets.xcassets */; };
@@ -50,6 +53,9 @@
 		E4397BDD27FD20A8004A6B8C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E4428FD8282997C9001526E9 /* JoinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinView.swift; sourceTree = "<group>"; };
 		E4428FDA28299872001526E9 /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
+		E4428FDC2829C291001526E9 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		E4428FDE2829C6D8001526E9 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		E4428FE02829F4D4001526E9 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		E475A02427EBD901007770CB /* LazherMeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LazherMeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E475A02727EBD901007770CB /* LazherMeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazherMeAppApp.swift; sourceTree = "<group>"; };
 		E475A02927EBD901007770CB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -139,12 +145,15 @@
 				E475A02927EBD901007770CB /* ContentView.swift */,
 				E475A05127EBECE7007770CB /* HomeView.swift */,
 				E4428FD8282997C9001526E9 /* JoinView.swift */,
+				E4428FDE2829C6D8001526E9 /* ProfileView.swift */,
 				E4428FDA28299872001526E9 /* CreateView.swift */,
 				E475A02B27EBD906007770CB /* Assets.xcassets */,
-				E475A02D27EBD906007770CB /* Preview Content */,
 				E475A05327EBEFB3007770CB /* Storyboard.storyboard */,
 				E4238A432805138B0061FE2C /* BLEManager.swift */,
 				E4238A45280514F30061FE2C /* BLEScan.swift */,
+				E4428FDC2829C291001526E9 /* SplashScreenView.swift */,
+				E4428FE02829F4D4001526E9 /* GameView.swift */,
+				E475A02D27EBD906007770CB /* Preview Content */,
 			);
 			path = LazherMeApp;
 			sourceTree = "<group>";
@@ -351,12 +360,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				E475A05227EBECE7007770CB /* HomeView.swift in Sources */,
+				E4428FDF2829C6D8001526E9 /* ProfileView.swift in Sources */,
 				E4238A442805138B0061FE2C /* BLEManager.swift in Sources */,
 				E475A02A27EBD901007770CB /* ContentView.swift in Sources */,
+				E4428FE12829F4D4001526E9 /* GameView.swift in Sources */,
 				E4238A46280514F30061FE2C /* BLEScan.swift in Sources */,
 				E4428FDB28299872001526E9 /* CreateView.swift in Sources */,
 				E4428FD9282997C9001526E9 /* JoinView.swift in Sources */,
 				E475A02827EBD901007770CB /* LazherMeAppApp.swift in Sources */,
+				E4428FDD2829C291001526E9 /* SplashScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,6 +532,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LazherMeApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LazherMe;
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Ouai le S l'app va utiliser ton bluettoth";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -553,6 +566,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LazherMeApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LazherMe;
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Ouai le S l'app va utiliser ton bluettoth";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

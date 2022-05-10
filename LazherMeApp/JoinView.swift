@@ -19,7 +19,7 @@ struct JoinView: View {
                 .padding(.leading,20.0)
                 .padding(.trailing,20.0)
             NavigationLink(destination: BLEScan()){
-                    RejoindreBouton()
+                RejoindreBouton()
                     .padding(.bottom, 0.0)
             }
         }
