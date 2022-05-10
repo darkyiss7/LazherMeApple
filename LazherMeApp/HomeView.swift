@@ -31,12 +31,12 @@ struct HomeView: View {
             }.accentColor(purpleDark)
         }
 
-        .navigationBarTitle("Try it!", displayMode: .inline)
+        .navigationBarTitle("Accueil", displayMode: .inline)
 
         .toolbar{
             ToolbarItem(placement: .principal) {
                             Text("Accueil")
-                    .foregroundColor(.white)
+                    .foregroundColor(.black)
                         }
             ToolbarItem(placement: .primaryAction) {
                 Menu {
@@ -54,7 +54,7 @@ struct HomeView: View {
             label: {
                 Label("More", systemImage: "ellipsis.circle")
                     .font(.system(size: 20.0))
-                    .foregroundColor(.white)
+                    .foregroundColor(purpleDark)
             }
             }
         }

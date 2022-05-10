@@ -40,7 +40,13 @@ struct SplashScreenView: View {
         }
     }
 }
-
+struct LogoView: View{
+    var body: some View{
+        Image("logo")
+            .resizable()
+            .frame(width: 450, height: 220)
+    }
+}
 struct SplashScreenView_Previews: PreviewProvider {
     static var previews: some View {
         SplashScreenView()
