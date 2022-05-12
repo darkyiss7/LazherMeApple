@@ -25,6 +25,8 @@
 		E475A04527EBD906007770CB /* LazherMeAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E475A04427EBD906007770CB /* LazherMeAppUITestsLaunchTests.swift */; };
 		E475A05227EBECE7007770CB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E475A05127EBECE7007770CB /* HomeView.swift */; };
 		E475A05427EBEFB3007770CB /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E475A05327EBEFB3007770CB /* Storyboard.storyboard */; };
+		E488E7DD282D4A2700607366 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E488E7DC282D4A2700607366 /* LoginView.swift */; };
+		E488E7DF282D4AC100607366 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E488E7DE282D4AC100607366 /* SignUpView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,8 @@
 		E475A04427EBD906007770CB /* LazherMeAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazherMeAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E475A05127EBECE7007770CB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E475A05327EBEFB3007770CB /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		E488E7DC282D4A2700607366 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		E488E7DE282D4AC100607366 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		F8B5CB861200CD649798413D /* Pods-LazherMeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LazherMeApp.release.xcconfig"; path = "Target Support Files/Pods-LazherMeApp/Pods-LazherMeApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,16 +147,18 @@
 				E4397BDD27FD20A8004A6B8C /* GoogleService-Info.plist */,
 				E475A02727EBD901007770CB /* LazherMeAppApp.swift */,
 				E475A02927EBD901007770CB /* ContentView.swift */,
+				E488E7DC282D4A2700607366 /* LoginView.swift */,
+				E488E7DE282D4AC100607366 /* SignUpView.swift */,
 				E475A05127EBECE7007770CB /* HomeView.swift */,
 				E4428FD8282997C9001526E9 /* JoinView.swift */,
 				E4428FDE2829C6D8001526E9 /* ProfileView.swift */,
 				E4428FDA28299872001526E9 /* CreateView.swift */,
-				E475A02B27EBD906007770CB /* Assets.xcassets */,
-				E475A05327EBEFB3007770CB /* Storyboard.storyboard */,
 				E4238A432805138B0061FE2C /* BLEManager.swift */,
 				E4238A45280514F30061FE2C /* BLEScan.swift */,
 				E4428FDC2829C291001526E9 /* SplashScreenView.swift */,
 				E4428FE02829F4D4001526E9 /* GameView.swift */,
+				E475A05327EBEFB3007770CB /* Storyboard.storyboard */,
+				E475A02B27EBD906007770CB /* Assets.xcassets */,
 				E475A02D27EBD906007770CB /* Preview Content */,
 			);
 			path = LazherMeApp;
@@ -363,10 +369,12 @@
 				E4428FDF2829C6D8001526E9 /* ProfileView.swift in Sources */,
 				E4238A442805138B0061FE2C /* BLEManager.swift in Sources */,
 				E475A02A27EBD901007770CB /* ContentView.swift in Sources */,
+				E488E7DF282D4AC100607366 /* SignUpView.swift in Sources */,
 				E4428FE12829F4D4001526E9 /* GameView.swift in Sources */,
 				E4238A46280514F30061FE2C /* BLEScan.swift in Sources */,
 				E4428FDB28299872001526E9 /* CreateView.swift in Sources */,
 				E4428FD9282997C9001526E9 /* JoinView.swift in Sources */,
+				E488E7DD282D4A2700607366 /* LoginView.swift in Sources */,
 				E475A02827EBD901007770CB /* LazherMeAppApp.swift in Sources */,
 				E4428FDD2829C291001526E9 /* SplashScreenView.swift in Sources */,
 			);
