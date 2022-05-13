@@ -7,6 +7,7 @@ Cette application est développée dans le cadre d'un projet technique concernan
   <img src="images/IMG_7452.PNG" height="350" title="Accueil">
   <img src="images/IMG_7453.PNG" height="350" title="Accueil">
 </p>
+
 ## Fonctionnalités
 
 - [x] Inscription
@@ -18,10 +19,10 @@ Cette application est développée dans le cadre d'un projet technique concernan
 - [ ] Connexion Bluetooth
 - [x] Deconnexion
 
-## Minimum requis
+## Versions
 
 - iOS 12.0+
-- Xcode 7.3
+- Xcode 13.3
 
 ## Installation
 
