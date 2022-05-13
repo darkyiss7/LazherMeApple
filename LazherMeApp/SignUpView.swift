@@ -30,7 +30,8 @@ struct SignUpView: View {
             }
         }
         .padding()
-        .navigationBarTitle(Text("Inscription").foregroundColor(purpleDark))
+        .navigationBarTitle(Text("Inscription").foregroundColor(.white))
+        
     }
 }
 

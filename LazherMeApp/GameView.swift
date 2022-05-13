@@ -10,46 +10,9 @@ import SwiftUI
 import FirebaseCore
 import Firebase
 import FirebaseDatabase
-class GameViewMode : ObservableObject {
-    @EnvironmentObject var viewModel : AppViewModel
-    @Published var email = "" // Variable contenant l'email de l'utilisateur
-    @Published var username = ""// Variable contenant l'username de l'utilisateur
-    @Published var usersBlue = [String]()
-    @EnvironmentObject var vm : HomeViewModel
-    init() {
-        fetchCurrentUser() // A l'initialisation on execute la fonction fetchCurrentUser()
-    }
-    //Fonction fetchCurrentUser() qui lie l'uid et l'username en bdd
-    private func fetchCurrentUser() {
-        
-        var ref: DatabaseReference! // Variable de reference a notre bdd
-        
-        ref = Database.database(url:"https://isen-lazherme-default-rtdb.europe-west1.firebasedatabase.app").reference() //Definition de la reference a la bdd
-        
-        // Listen for new comments in the Firebase database
-        ref.child("Games").child(vm.currentgame).child("players").observe(.childAdded, with: { (snapshot) -> Void in
-            let result = snapshot.value
-            let resultString = String(describing: result)
-            self.usersBlue.append(resultString)
-        //  self.List.insertRows(
-        //    at: [IndexPath(row: self.usersBlue.count - 1, section: self.kSectionComments)],
-        //    with: UITableView.RowAnimation.automatic
-        //   )
-          })
-        //  // Listen for deleted comments in the Firebase database
-        //  ref.observe(.childRemoved, with: { (snapshot) -> Void in
-           // let index = self.indexOfMessage(snapshot)
-            //self.usersBlue.remove(at: index)
-        //    self.List.deleteRows(
-        //      at: [IndexPath(row: index, section: self.kSectionComments)],
-        //      with: UITableView.RowAnimation.automatic
-        //    )
-         // })
-    }
-}
+
 struct GameView: View {
     @EnvironmentObject var vm : HomeViewModel
-    @ObservedObject var vmGame = GameViewMode()
     var body: some View {
         VStack{
             HStack(alignment:.center){
@@ -109,8 +72,7 @@ struct GameView: View {
                             .font(.system(size: 20.0))
                     }
                     .padding()
-                    List(vmGame.usersBlue,id: \.self){ users in
-                        Text("\(users)")
+                    List(){
                     }
                 }
                 //Team rouge

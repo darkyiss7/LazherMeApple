@@ -103,12 +103,14 @@ PODS:
     - nanopb/encode (= 2.30908.0)
   - nanopb/decode (2.30908.0)
   - nanopb/encode (2.30908.0)
+  - NavigationBarColor (0.1.0)
   - PromisesObjC (2.1.0)
 
 DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
+  - NavigationBarColor
 
 SPEC REPOS:
   trunk:
@@ -126,6 +128,7 @@ SPEC REPOS:
     - GTMSessionFetcher
     - leveldb-library
     - nanopb
+    - NavigationBarColor
     - PromisesObjC
 
 SPEC CHECKSUMS:
@@ -143,8 +146,9 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 5595ec75acf5be50814f81e9189490412bad82ba
   leveldb-library: 50c7b45cbd7bf543c81a468fe557a16ae3db8729
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
+  NavigationBarColor: fbb2d80e4772c59bb55575572cf0499459db366e
   PromisesObjC: 99b6f43f9e1044bd87a95a60beff28c2c44ddb72
 
-PODFILE CHECKSUM: 1ac432274f5917526b00b88eb37dc08228631aa6
+PODFILE CHECKSUM: 09c74e8db5e8c15b472c1bb7f46bc224dbf83ee4
 
 COCOAPODS: 1.11.3

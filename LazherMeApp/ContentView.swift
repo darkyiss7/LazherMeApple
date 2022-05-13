@@ -15,6 +15,7 @@ let lightGreyColor = Color(red: 239.0/255.0, green: 243.0/255.0, blue: 244.0/255
 let darkGreyColor = Color(red: 70.0/255.0, green: 70.0/255.0, blue: 70.0/255.0)
 let purpleDark = Color(red: 123.0/255.0, green: 57.0/255.0, blue: 255.0/255.0)
 
+let myCustomColor = UIColor(red: 123.0/255.0, green: 57.0/255.0, blue: 255.0/255.0, alpha: 1)
 //Classe FirebaseManager qui permet de recuperer notre utilisateur connecté
 class FirebaseManager : NSObject {
     let auth : Auth  // Utilisateur connecté
@@ -26,6 +27,20 @@ class FirebaseManager : NSObject {
 }
 // Class AppViewModel qui gère si un utilisateur est connecté ou non
 class AppViewModel: ObservableObject{
+    init() {
+            // 1.
+        UINavigationBar.appearance().backgroundColor = myCustomColor
+           
+            // 2.
+            UINavigationBar.appearance().largeTitleTextAttributes = [
+                .foregroundColor: UIColor.white,
+                .font : UIFont(name:"HelveticaNeue-Thin", size: 30)!]
+                    
+            // 3.
+            UINavigationBar.appearance().titleTextAttributes = [
+                .foregroundColor: UIColor.white,
+                .font : UIFont(name: "HelveticaNeue-Thin", size: 20)!]
+        }
     let auth = Auth.auth() // Utilisateur connecté
     @Published var signedIn = false  // Boolean si connecté ou non
     var isSignedIn: Bool {
@@ -69,6 +84,7 @@ class AppViewModel: ObservableObject{
 
 //Structure de la page
 struct ContentView: View {
+    
     @EnvironmentObject var viewModel : AppViewModel
     var body: some View {
         //Creation d'une navigationView
@@ -82,6 +98,7 @@ struct ContentView: View {
                 LoginView()
             }
         }
+        .accentColor(.white)
         .onAppear{
             viewModel.signedIn = viewModel.isSignedIn // Quand la page apparait, on regarde si l'utilisateur est connecté, on met true dans signedIn si la methode isSignedIn renvoie true et inversement
         }

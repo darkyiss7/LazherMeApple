@@ -47,6 +47,7 @@ class HomeViewModel : ObservableObject {
     }
 }
 struct HomeView: View {
+    
     //Variables d'etat pour savoir si un bouton de du dropdown menu est cliqué (profile ou bluetooth)
     @State var toolbarLinkSelected = false
     @State var toolbarLink2Selected = false
@@ -77,13 +78,12 @@ struct HomeView: View {
                     }
             }.accentColor(purpleDark)
         }
-        
         .navigationBarTitle("Accueil", displayMode: .inline)
         
         .toolbar{
             ToolbarItem(placement: .principal) {
                 Text("Accueil")
-                    .foregroundColor(.black)
+                    .foregroundColor(.white)
             }
             ToolbarItem(placement: .primaryAction) { // Barre du haut
                 Menu { // Menu deroulant en haut a gauche
@@ -98,10 +98,11 @@ struct HomeView: View {
                             .foregroundColor(.red)
                     }
                 }
+                
             label: {
                 Label("More", systemImage: "ellipsis.circle")
                     .font(.system(size: 20.0))
-                    .foregroundColor(purpleDark)
+                    .foregroundColor(.white)
             }
             }
         }
