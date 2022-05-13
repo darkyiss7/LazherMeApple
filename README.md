@@ -40,3 +40,7 @@ pod 'Firebase/Auth'
 pod 'Firebase/Database'
 
 ```
+
+## Auteurs
+- [Théo Dubois](https://github.com/darkyiss7)
+- [Alexandre Beau](https://github.com/Alexandrebeau
