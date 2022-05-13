@@ -1,6 +1,12 @@
 # LazherMe - Application iOS
 ## Description
-Cette application est développée dans le cadre d'un projet technique concernant un laser game portatif.
+Cette application est développée dans le cadre d'un mini-projet en Swift rattaché a un projet technique d'ingénieur sur un laser game portatif (Lazherme).
+<p align="center">
+  <img src="images/logo_violet.png" height="350" title="Connexion">
+</p>
+
+### Captures d'ecran
+
 <p align="center">
   <img src="images/IMG_7443.PNG" height="350" title="Connexion">
   <img src="images/IMG_7453.PNG" height="350" title="Accueil">
